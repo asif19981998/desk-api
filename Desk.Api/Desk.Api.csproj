@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\staticfiles\audio.png" />
+    <Content Remove="wwwroot\staticfiles\compressed.jpg" />
+    <Content Remove="wwwroot\staticfiles\document.png" />
+    <Content Remove="wwwroot\staticfiles\excel.png" />
+    <Content Remove="wwwroot\staticfiles\others.png" />
+    <Content Remove="wwwroot\staticfiles\pdf.png" />
+    <Content Remove="wwwroot\staticfiles\ppt.png" />
+    <Content Remove="wwwroot\staticfiles\video.png" />
+    <Content Remove="wwwroot\useruploads\demofiledonotdelete.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="LazZiya.ImageResize" Version="4.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="5.0.9" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.14" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Desk.Core\Desk.Core.csproj" />
+    <ProjectReference Include="..\Desk.Infrastructure\Desk.Infrastructure.csproj" />
+    <ProjectReference Include="..\Desk.Services\Desk.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\staticfiles\audio.png" />
+    <None Include="wwwroot\staticfiles\compressed.jpg" />
+    <None Include="wwwroot\staticfiles\document.png" />
+    <None Include="wwwroot\staticfiles\excel.png" />
+    <None Include="wwwroot\staticfiles\others.png" />
+    <None Include="wwwroot\staticfiles\pdf.png" />
+    <None Include="wwwroot\staticfiles\ppt.png" />
+    <None Include="wwwroot\staticfiles\video.png" />
+    <None Include="wwwroot\useruploads\demofiledonotdelete.png" />
+  </ItemGroup>
+
+</Project>

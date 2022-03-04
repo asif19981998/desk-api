@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Auth\Models\**" />
+    <Compile Remove="obj\**" />
+    <EmbeddedResource Remove="Auth\Models\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="Auth\Models\**" />
+    <None Remove="obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Desk.Core\Desk.Core.csproj" />
+    <ProjectReference Include="..\Desk.Infrastructure\Desk.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Auth\Models\" />
+    <Folder Include="Company\CompanyInformations\" />
+  </ItemGroup>
+
+</Project>
